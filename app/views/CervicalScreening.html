@@ -1,0 +1,90 @@
+{% extends 'layout-app.html' %}
+
+{% set hub = "Messages" %}
+
+{% set backLink = true %}
+{% set backLinkURL = "/pages/messages/your-messages" %}
+
+{% set pageHeading = "Your cervical screening invitation" %}
+{% set pageDescription = "Received today at 1:02pm" %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- DYNAMIC PAGE TITLE -->
+      {{ dynamicPageTitle({
+        title: pageHeading,
+        titleSmall: true,
+        titleHiddenTextBefore: "Message from",
+        description: pageDescription,
+        descriptionMuted: true
+      })}}
+
+      <div class="nhsuk-u-margin-bottom-7">
+        <p>Dear Joe Doe,
+      <div class="nhsuk-u-padding-bottom-0"></div>
+        We are writing to invite you for your NHS cervical screening (previously called the ‘smear test’).</p>
+        <div class="nhsuk-u-padding-bottom-1"></div>
+          
+          We offer cervical screening to all women and people with a cervix, aged 25 to 64, to help prevent cervical cancer and to save lives.
+            <div class="nhsuk-u-margin-bottom-7"></div>
+                <h4 class="How to book your appointment">How to book your cervical screening appointment</h4>
+              Contact your GP surgery to book a cervical screening appointment.
+              <div class="nhsuk-u-padding-bottom-5"></div>
+          
+              Some sexual health clinics also offer cervical screening. <a href="#" class="nhsuk-link"> Contact your local sexual health clinic</a> to find out more.
+  <div class="nhsuk-u-margin-bottom-7"></div>
+    <h4 class="How to book your appointment">Why you should I book an appointment?</h4>
+        <div class="nhsuk-u-padding-bottom-1"></div>
+            
+        Cervical screening checks for certain types of human papillomavirus (HPV). These ‘high risk’ types of HPV can be found in over 99% of cervical cancers.
+            <div class="nhsuk-u-padding-bottom-5"></div>
+                If we find one of these HPV types in your screening sample, we then check for abnormal cell changes.
+            <div class="nhsuk-u-padding-bottom-5"></div>
+               
+          
+            By finding and treating these changes early, we can prevent most cases of cervical cancer.
+                You can get HPV the first time you have sexual contact, and you do not need to have penetrative sex to get it.
+            <div class="nhsuk-u-padding-bottom-5"></div>
+            
+            You can have it even if you have had the same sexual partner for a long time or have not been sexually active for many years.
+            
+            You can still have HPV regardless of your sexual orientation or if you have had the HPV vaccine.
+            <div class="nhsuk-u-margin-bottom-7"></div>
+            <h4 class="How to book your appointment"> Support if you are worried about cervical screening? </s></h4>
+            <div class="nhsuk-u-margin-bottom-5"></div>
+
+
+
+          Cervical screening appointments only take 5 to 10 minutes, but you can ask for a longer appointment if you would like more time.
+          You can also ask for a female nurse or doctor and can bring someone else in the room with you for support.
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          During your appointment, you can ask to lie in a different position and for a smaller speculum to make the test more comfortable for you.
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          For more information about what happens during a cervical screening appointment, HPV, and cervical cancer, <a href="#" class="nhsuk-link"> read our online leaflet on the GOV.UK website </a> .
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          You can also <a href="#" class="nhsuk-link"> find advice and support on the GOV.UK website if you feel worried or need assistance attending cervical screening</a>.
+          <div class="nhsuk-u-margin-bottom-7"></div>
+
+          <h4 class="How to book your appointment">More information</h4>
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          The nurse or doctor who does your screening test will tell you how and when you can expect to get your result, and they will also be told your result.
+          <div class="nhsuk-u-margin-bottom-5"></div>   
+          Tell your GP surgery if you change your address or contact details.
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          <p>Speak to a GP as soon as possible if you have any of the following symptoms, regardless of your cervical screening history:</p>
+          <ul class="nhsuk-list nhsuk-list--bullet">
+            <li>vaginal bleeding that’s unusual for you – including bleeding during or after sex, between your periods or after the menopause, or heavier periods than usual
+            <li>changes to your vaginal discharge</li>
+            <li>pain during sex</li>
+            <li>pain in your lower back, between your hip bones (pelvis), or in your lower tummy</li>
+          </ul>
+          
+          <div class="nhsuk-u-margin-bottom-7"></div>
+          Learn more about NHS cervical screening and HPV, including what happens at your appointment and how to book.
+          <div class="nhsuk-u-margin-bottom-5"></div>
+          If you have any concerns or questions about cervical screening, speak with a GP.
+          <a href="#" class="nhsuk-link"> Read about how we use and protect your information </a>, or <a href="#" class="nhsuk-link"> opt out</a>.
+  {% endblock %}
