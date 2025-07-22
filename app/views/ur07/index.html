@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Cervical screening prototype
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1>Cervical Screening Prototype</h1>
+
+    <!-- card group -->
+    {% from "nhsapp/components/card/macro.njk" import nhsappCardGroup %}
+    {% from "nhsapp/components/card/macro.njk" import nhsappCard %}
+
+    {{ nhsappCardGroup({
+    stacked: true,
+    cards: [
+    {
+    title: 'PA1',
+    href: '/ur07/pa1'
+    },
+    {
+    title: 'CIC',
+    href: '/ur07/cic'
+    },
+    {
+    title: 'CXAN',
+    href: '/ur07/cxan'
+    },
+    {
+    title: 'CUA',
+    href: '/ur07/cua'
+    },
+    {
+    title: 'CMC',
+    href: '/ur07/cmc'
+    },
+    {
+    title: 'CXNC',
+    href: '/ur07/cxnc'
+    }
+    ]
+    }) }}
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'layout-app-ur.html' %}
+
+{% set hub = "Messages" %}
+
+{% set backLink = true %}
+{% set backLinkURL = "/ur07/index" %}
+
+{% set pageHeading = "Cervical screening letter" %}
+{% set pageDescription = "Received today at 1:02pm" %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row"></div>
+<div class="nhsuk-grid-column-two-thirds"></div>
+
+<!-- DYNAMIC PAGE TITLE -->
+{{ dynamicPageTitle({
+title: pageHeading,
+titleSmall: true,
+titleHiddenTextBefore: "Message from",
+description: pageDescription,
+descriptionMuted: true
+})}}
+
+<div class="nhsuk-u-padding-bottom-4">
+  <p class="nhsuk-body">Dear Joe Doe,</p>
+  <p class="nhsuk-body">You recently asked to be removed from the NHS Cervical Screening Programme.</p>
+  <p class="nhsuk-body">Because of this, we have removed your name from the invitation list. You will not receive
+    any more cervical screening invitations or reminders from the programme.</p>
+
+  <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">If you change your mind</h3>
+  <p>Speak to a GP if you want to return to the cervical screening programme and continue
+    receiving invitations.</p>
+  <p>You can change your mind at any time as long as you are still eligible for cervical
+    screening. </p>
+  <br>
+
+  <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-3">More information</h3>
+  <p>Speak to a GP as soon as possible if you have any of the following symptoms, regardless of your cervical screening
+    history:</p>
+  <ul class="nhsuk-list nhsuk-list--bullet">
+    <li>vaginal bleeding that’s unusual for you – including bleeding during or after sex, between your periods or after
+      the menopause, or heavier periods than usual </li>
+    <li>changes to your vaginal discharge</li>
+    <li>pain during sex</li>
+    <li>pain in your lower back, between your hip bones (pelvis), or in your lower tummy</li>
+  </ul>
+  <p>Find more about cervical screening at: <a href="#" class="nhsuk-link">www.nhs.uk/cervical</a></p>
+
+  <br>
+
+  <p>If you think our information is incorrect or you have any questions, contact a GP or your nearest sexual health
+    clinic.</p>
+
+</div>
+</div>
+
+
+{% endblock %}

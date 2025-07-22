@@ -1,0 +1,61 @@
+{% extends 'layout-app-ur.html' %}
+
+{% set hub = "Messages" %}
+
+{% set backLink = true %}
+{% set backLinkURL = "/ur07/index" %}
+
+{% set pageHeading = "Cervical screening letter" %}
+{% set pageDescription = "Received today at 1:02pm" %}
+
+{% block content %}
+
+<div class="nhsuk-grid-row"></div>
+<div class="nhsuk-grid-column-two-thirds"></div>
+
+<!-- DYNAMIC PAGE TITLE -->
+{{ dynamicPageTitle({
+title: pageHeading,
+titleSmall: true,
+titleHiddenTextBefore: "Message from",
+description: pageDescription,
+descriptionMuted: true
+})}}
+
+<div class="nhsuk-u-padding-bottom-4">
+  <p class="nhsuk-body">Dear Joe Doe,</p>
+  <p class="nhsuk-body">We have received an instruction to withdraw you from the NHS Cervical Screening
+    Programme. We have removed your name from the invitation list and we confirm that
+    you will receive no further invitations for screening from us. </p>
+  <p class="nhsuk-body">You can return to the cervical screening programme at any time providing that you
+    remain eligible for cervical screening.</p>
+
+  <p class="nhsuk-u-margin-bottom-2">If you would like more information about cervical screening, please visit:</p>
+  <p><a href="#" class="nhsuk-link">www.nhs.uk/cervical</a> or scan the QR code at the top of this letter with your smartphone 
+or device to go straight to the website. The ‘Helping you decide’ leaflet is available here: <a href="#" class="nhsuk-link">www.gov.uk/government/publications/cervical-screening-description-in-brief </a></p>
+
+
+  <p>An easy read version can be found at: <a href="#" class="nhsuk-link">www.gov.uk/government/publications/cervical-
+screening-easy-read-guide</a></p>
+
+  <p class="nhsuk-u-margin-bottom-2">If you have any unusual symptoms, please tell your GP as soon as possible. These might 
+include:</p>
+  <ul class="nhsuk-list nhsuk-list--bullet">
+    <li>vaginal bleeding that is unusual for you - bleeding during or after sex, between 
+your periods, after the menopause or heavier periods than usual</li>
+    <li>pain during sexual intercourse</li>
+    <li>changes to vaginal discharge</li>
+    <li>pain in your lower back, between your hip bones (pelvis), or in your lower tummy</li>
+  </ul>
+  <p>These symptoms are often caused by other things, but it is important to get them 
+checked. If you are found to have cervical cancer, getting it diagnosed and treated early 
+can mean you are more likely to survive.</p>
+
+<h3>If you think our information is incorrect, or you have any questions, please speak with 
+your GP. You may wish to retain a copy of this letter for future reference.</h3>
+
+</div>
+</div>
+
+
+{% endblock %}
